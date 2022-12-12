@@ -1,0 +1,77 @@
+.slider {
+  margin-top: 20px;
+}
+
+.slider>button {
+  opacity: 0;
+  height: 100%;
+  z-index: 1;
+  width: 5vw;
+}
+
+.slider:hover button {
+  opacity: 1;
+}
+
+ul li button::before {
+  font-size: 10px !important;
+  color: rgb(150, 158, 171) !important;
+}
+
+li.slick-active button::before {
+  color: white !important;
+}
+
+.slick-list {
+  overflow: initial !important;
+}
+
+.slick-prev {
+  left: -75px !important;
+}
+
+.slick-next {
+  right: -95px !important;
+}
+
+.wrap {
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.wrap>a {
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding: 4px;
+}
+
+.wrap>a>img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap>a:hover {
+  padding: 0;
+  border: 4px solid rgba(249, 249, 249, .6);
+  transition-duration: 160ms;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrap {
+    height: 200px;
+  }
+
+  .wrap > a {
+    height: 200px;
+  }
+
+  .wrap>a>img {
+    width: 100%;
+    height: 100%;
+  }
+}
